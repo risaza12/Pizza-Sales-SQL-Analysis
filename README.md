@@ -14,7 +14,17 @@ The analysis highlights not just technical SQL skills but also the ability to ex
 - **`Pizza_sales_csv.zip`** → Dataset (Orders, Order Details, Pizzas, Pizza Types)  
 - **`Questions.txt`** → 30+ SQL questions (Basic → Advanced)  
 - **`Answer.sql`** → My SQL solutions with business insights  
-- **`images`** → Sample Output Screenshot images 
+- **`images`** → Sample Output & Schema Diagram Screenshot images 
+
+---
+
+## 🗂️ Database Schema  
+
+The database is designed with four tables: **pizzas, pizza_types, orders, and order_details**.  
+This schema ensures normalized relationships between orders, pizzas, and pizza categories.  
+
+![Database Schema](images/Schema_diagram.png)  
+*Figure: Entity-Relationship (ER) diagram of the Pizza Sales database schema*
 
 ---
 
